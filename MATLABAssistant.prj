@@ -1,0 +1,104 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="720510188" file="F:\Work\toolsdevelopment\MATLABAssistant\utils\MATLABAssistant.prj" location="F:\Work\toolsdevelopment\MATLABAssistant\utils" name="MATLABAssistant" target="target.mlapps" target-name="Package App">
+    <param.appname>MATLABAssistant</param.appname>
+    <param.authnamewatermark>Sysenso</param.authnamewatermark>
+    <param.email>contactus@sysenso.com</param.email>
+    <param.company>Sysenso Systems Private Limited</param.company>
+    <param.icon>${PROJECT_ROOT}\MATLABAssistant_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\MATLABAssistant_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\MATLABAssistant_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\MATLABAssistant_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>MATLABAssistant is a utility, which helps to perform predefined processes based on user's commands through speech.</param.summary>
+    <param.description>&lt;b&gt;MATLAB Assistant&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;MATLAB Assistant is a voice assistant tool that helps to perform predefined activities within MATLAB/Simulink(similar to Google Assistant, Amazon - Alexa).&lt;/li&gt;&lt;/ul&gt;
+
+&lt;b&gt;Prerequisite&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt; MATLAB version 2015b and above.&lt;/li&gt;&lt;li&gt;Python version 3.9.&lt;/li&gt;&lt;/ul&gt;
+&lt;b&gt;Note:&lt;/b&gt; Please note that the python application is added to the system path.&lt;br&gt;
+&lt;b&gt;Note:&lt;/b&gt; Please note that the following modules are installed in python
+&lt;ol&gt;&lt;li&gt;speech_recognition&lt;/li&gt;&lt;li&gt;playsound&lt;/li&gt;&lt;li&gt;gtts&lt;/li&gt;&lt;li&gt;pyaudio&lt;/li&gt;&lt;/ol&gt; 
+
+&lt;b&gt;Usage Information&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt; Launch the MATLAB Assistant App.&lt;/li&gt; &lt;li&gt;The following predefined commands can be given as voice input to operate the MATLAB assistant.&lt;/li&gt;&lt;/ul&gt;
+&lt;ol&gt;&lt;li&gt;'hey','hi','hello' for greetings.&lt;/li&gt;
+&lt;li&gt;'what is your name','what's your name','tell me your name' for getting app name.&lt;/li&gt;
+&lt;li&gt;'my name is (username)' to tell user name.&lt;/li&gt;
+&lt;li&gt;'how are you','how are you doing' for greetings.&lt;/li&gt;
+&lt;li&gt;'what's the time','tell me the time','what time is it' to know the time.&lt;/li&gt;
+&lt;li&gt;'search web for (search word)' to search anything in web.&lt;/li&gt;
+&lt;li&gt;'search youtube for (search word)' to search anything in youtube.&lt;/li&gt;
+&lt;li&gt;'help (inbuilt function)' to get the documentation for the inbuilt function in command window.&lt;/li&gt;
+&lt;li&gt;'search documentation for (search word)' to search anything in MATLAB documentation.&lt;/li&gt;
+&lt;li&gt;'clear base workspace' to clear the base workspace.&lt;/li&gt;
+&lt;li&gt;'clear command window screen' to clear the command window screen.&lt;/li&gt;
+&lt;li&gt;'open script as (script name)' to open a new script or an existing script with name as (script name).&lt;/li&gt;
+&lt;li&gt;'run matlab script (script name)' to run the given script as input.&lt;/li&gt;
+&lt;li&gt;'run active matlab script' to run the active MATLAB script in the editor window.&lt;/li&gt;
+&lt;li&gt;'open simulink' to open SIMULINK starting window.&lt;/li&gt;
+&lt;li&gt;'open simulink library browser' to open SIULINK Library Browser.&lt;/li&gt;
+&lt;li&gt;''open new system' to open a SIMULINK system.&lt;/li&gt;
+&lt;li&gt;'open system (system name)' to open the SIMULINK system given as input.&lt;/li&gt;
+&lt;li&gt;'simulate system (system name)' to simulate the SIMULINK syatem given as input.&lt;/li&gt;
+&lt;li&gt;'simulate active system' to simulate the active SIMULINK system.&lt;/li&gt;
+&lt;li&gt;'about matlab assistant' to open the MATLAB Assistant document.&lt;/li&gt;
+&lt;li&gt;'exit matlab' to close the MATLAB window.&lt;/li&gt;
+&lt;li&gt;'exit', 'quit', 'goodbye' to exit the MATLAB Assistant.&lt;/li&gt;&lt;/ol&gt;</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Simulink</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>2</item>
+    </param.products.id>
+    <param.products.version>
+      <item>8.6</item>
+      <item>8.6</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>F:\Work\toolsdevelopment\MATLABAssistant\utils</param.output>
+    <param.guid>12f2c6d9-d5c1-4678-93fe-f8e352d9967d</param.guid>
+    <unset>
+      <param.screenshot />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\matlabAssistant.m</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\assistantRecord.py</file>
+      <file>${PROJECT_ROOT}\doc\matlabAssistant_doc.pdf</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="F:\Work\toolsdevelopment\MATLABAssistant" name="utils" optional="false">F:\Work\toolsdevelopment\MATLABAssistant\utils</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2015b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
